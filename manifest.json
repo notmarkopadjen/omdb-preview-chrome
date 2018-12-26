@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+   
+    "name": "Movie Data preview",
+    "version": "0.1.0",
+    "description": "Showing movie data on page",
+
+    "permissions": [
+      "storage"
+    ],
+
+    "content_scripts": [
+    {
+        "css": ["styles.css"],
+        "js": ["content.js"],
+        "matches": ["http://*/*", "https://*/*"]
+    }
+    ]
+}
