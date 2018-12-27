@@ -6,6 +6,8 @@ let insertFoundElement = function(el, title, year) {
     if (!title) return;
     console.log('title: "' + title + '", year ' + year);
     var a = document.createElement("a");
+    a.href = "https://www.google.com/search?q=" + title + " " + year;
+    a.target = "_blank";
     a.className = "tooltip";
     a.innerHTML = iconContent;
     var toolTipContent = document.createElement("div");
